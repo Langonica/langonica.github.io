@@ -52,7 +52,7 @@ background: -webkit-linear-gradient(top, #607d8b 0%,#435760 100%); /* Chrome10+,
 .temperature {
 background: #ff6f00; /* Old browsers */
 background: -moz-linear-gradient(top, #ff6f00 0%, #c45500 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#c45500)); /* Chrome,Safari4+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff6f00), color-stop(100%,#c45500)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, #ff6f00 0%,#c45500 100%); /* Chrome10+,Safari5.1+ */
 }
 .mode {
