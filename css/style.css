@@ -145,7 +145,7 @@ html body .spinCold .ui-group-theme-a .ui-btn, .ui-page-theme-a .ui-btn{border:0
 .icon, .icon * {text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);}
 
 .gaugePos {
-		bottom: 0; left: 0; top: 20%; right: 0;
+		bottom: 0; left: 0; top: 0; right: 0;
 	    /* margin: auto; */
 	    position: absolute;
 	    width: 100%;
