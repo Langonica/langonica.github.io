@@ -392,6 +392,7 @@ FusionCharts.register('theme', {
       			gaugeBorderColor: '#008ee4',
       			showTickMarks: '1',
       			showTickValues: '1',
+      			ticksOnRight: "1",
       			tickFontColor: '#fff',
       			gaugeBorderThickness: '2',
       			gaugeBorderColor: '#fff',
