@@ -1011,10 +1011,12 @@ var csatGauge = new FusionCharts({
         "dataFormat": "json",
         "dataSource":{
                "chart": {
-                  "caption": "Customer Satisfaction Score",
-                  "subcaption": "Last week",
+                  
                   "lowerLimit": "0",
                   "upperLimit": "100",
+                  "canvasbgAlpha": "0",
+                  "showBorder": "0",
+                  "bgAlpha": "0",
                   "theme": "ocean"
                },
                "colorRange": {
