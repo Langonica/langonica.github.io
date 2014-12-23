@@ -1004,28 +1004,49 @@ function gaugeTemp(a,b,c){
 
 
 var csatGauge = new FusionCharts({
-        "type": "thermometer",
+        "type": "temperature",
         "renderAt": c,
         "width": "100%",
         "height": "100%",
         "dataFormat": "json",
         "dataSource":{
-               {
    "chart": {
-      "caption": "Temperature Monitor",
-      "subcaption": " Central cold store",
       "lowerLimit": "-10",
       "upperLimit": "0",
-      "numberSuffix": "°C",
-      "showhovereffect": "1",
       "decimals": "1",
-      "gaugeFillColor": "#008ee4",
-      "gaugeFillAlpha": "70",
+      "numberSuffix": "°F",
+      "showhovereffect": "1",
+      "thmFillColor": "#008ee4",
+      "showGaugeBorder": "1",
+      "gaugeBorderColor": "#008ee4",
+      "gaugeBorderThickness": "2",
+      "gaugeBorderAlpha": "30",
       "thmOriginX": "100",
-      "theme": "fint",
-      "chartBottomMargin": "20"
+      "chartBottomMargin": "20",
+      "valueFontColor": "#000000",
+      "theme": "fint"
    },
-   "value": b
+   "value": b,
+   "annotations": {
+      "showbelow": "0",
+      "groups": [
+         {
+            "id": "indicator",
+            "items": [
+               {
+                  "id": "background",
+                  "type": "rectangle",
+                  "alpha": "50",
+                  "fillColor": "#AABBCC",
+                  "x": "$gaugeEndX-40",
+                  "tox": "$gaugeEndX",
+                  "y": "$gaugeEndY+54",
+                  "toy": "$gaugeEndY+72"
+               }
+            ]
+         }
+      ]
+   }
 }
       });
 	csatGauge.setTransparent(true);
