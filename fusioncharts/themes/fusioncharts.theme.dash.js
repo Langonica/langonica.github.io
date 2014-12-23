@@ -434,6 +434,7 @@ FusionCharts.register('theme', {
             chart: {
                 plotFillColor: '#04476c',
                 targetColor: '#4d998d',
+                showTickMarks: '0';
                 lowerLimit: '-20',
       			upperLimit: '120'
             }
