@@ -1047,7 +1047,7 @@ var csatGauge = new FusionCharts({
          }
       ]
    },
-   "value": b,
+   "target": b,
 }
       });
 	csatGauge.setTransparent(true);
