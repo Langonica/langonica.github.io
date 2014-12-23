@@ -396,8 +396,8 @@ FusionCharts.register('theme', {
       			gaugeBorderAlpha: '30',
       			thmOriginX: '50',
       			chartBottomMargin: '0',
-      			valueFontColor: "#fff",
-      			valueFontSize: "18px"
+      			valueFontColor: '#fff',
+      			valueFontSize: '18px'
                 
             }
         },
