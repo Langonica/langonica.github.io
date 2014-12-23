@@ -1003,7 +1003,7 @@ function renderTemp(e) {
 function gaugeTemp(a,b,c){
 
 
-    $("#ssss").insertFusionCharts({
+    $(c).insertFusionCharts({
         "type": "angulargauge",
         "width": "120",
         "height": "75",
