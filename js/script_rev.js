@@ -997,14 +997,7 @@ function renderSlider(e, t) {
     })
 }
 
-function renderTemp(e) {
-    e.find(".icon").remove();
-    var foo = e.attr("data-value");
-    var res = foo.replace("°", "");
-    var unique = e.attr("data-device") + "a";
-    e.append("<div class='gaugePos' id='"+unique+"'></div><div class='footer'><i class='fa fa-fw wi wi-thermometer'></i></div>");
-	gaugeTemp(foo,res,unique);
-}
+
 
 function renderHumidity(e) {
     e.find(".icon").remove();
@@ -1025,31 +1018,68 @@ function renderBatt(e) {
 }
 
 
-
+function renderTemp(e) {
+    e.find(".icon").remove();
+    var foo = e.attr("data-value");
+    var res = foo.replace("°", "");
+    var unique = e.attr("data-device") + "a";
+    e.append("<div class='gaugePos' id='"+unique+"'></div><div class='footer'><i class='fa fa-fw wi wi-thermometer'></i></div>");
+	gaugeTemp(foo,res,unique);
+}
 
 function gaugeTemp(a,b,c){
 
-	var g = new JustGage({
-	   id: c,
-	   value: b,
-	   min: 0,
-	   max: 100,
-       symbol: "°",
-       label: "Degrees",
-	   titleFontColor: "#FFC191",
-	   valueFontColor : "#FFC191",
-	   labelFontColor : "#FFC191",
-	   gaugeColor: "#FFC191",
-	   levelColors: [ "#F5730F", "#A04500", "#763300" ],
-	   gaugeWidthScale: 1,
-	   noGradient : false,
-	   hideMinMax : true,
-	   donut: false
+FusionCharts.ready(function (a,b,c) {
+    var csatGauge = new FusionCharts({
+        "type": "angulargauge",
+        "renderAt": c,
+        "width": "120",
+        "height": "67",
+        "dataFormat": "json",
+            "dataSource": {
+                   "chart": {
+                      "caption": "Customer Satisfaction Score",
+                      "subcaption": "Last week",
+                      "lowerLimit": "0",
+                      "upperLimit": "100",
+                      "theme": "fint"
+                   },
+                   "colorRange": {
+                      "color": [
+                         {
+                            "minValue": "0",
+                            "maxValue": "50",
+                            "code": "#e44a00"
+                         },
+                         {
+                            "minValue": "50",
+                            "maxValue": "75",
+                            "code": "#f8bd19"
+                         },
+                         {
+                            "minValue": "75",
+                            "maxValue": "100",
+                            "code": "#6baa01"
+                         }
+                      ]
+                   },
+                   "dials": {
+                      "dial": [
+                         {
+                            "value": "67"
+                         }
+                      ]
+                   }
+            }
+      });
 
-	});
+    csatGauge.render();
+});
 
 
 }
+
+
 
 function gaugeHumidity(a,b,c){
 
