@@ -1023,7 +1023,7 @@ var csatGauge = new FusionCharts({
       "dial": [
          {
             "bgColor": "#999999",
-            "borderAlpha": "0"
+            "borderAlpha": "0",
             "value": b
          }
       ]
