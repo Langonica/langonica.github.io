@@ -1020,26 +1020,26 @@ var csatGauge = new FusionCharts({
       "numberSuffix": "°F",
 		"showTickMarks": "0",
 		"showTickValues": "0",
-		"lowerLimit": "-20",
+		"lowerLimit": "-30",
 		"upperLimit": "120",
       "theme": "dash"
    },
    "colorRange": {
       "color": [
          {
-            "minValue": "-20",
-            "maxValue": "50",
+            "minValue": "-30",
+            "maxValue": "20",
             "code": "#e44a00",
             "alpha": "25"
          },
          {
-            "minValue": "50",
-            "maxValue": "75",
+            "minValue": "20",
+            "maxValue": "70",
             "code": "#f8bd19",
             "alpha": "25"
          },
          {
-            "minValue": "75",
+            "minValue": "70",
             "maxValue": "120",
             "code": "#6baa01",
             "alpha": "25"
