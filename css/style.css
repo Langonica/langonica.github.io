@@ -150,7 +150,7 @@ html body .spinCold .ui-group-theme-a .ui-btn, .ui-page-theme-a .ui-btn{border:0
 	    position: absolute;
 	    width: 110px;
 	    height: 110px;
-	    
+	    z-index: 1500;
 	    
 }
 
