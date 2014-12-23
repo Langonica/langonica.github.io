@@ -1036,7 +1036,7 @@ FusionCharts.ready(function () {
         "dataFormat": "json",
             "dataSource": {
                    "chart": {
-                      "caption": "Customer Satisfaction Score",
+                      
                       "subcaption": "Last week",
                       "lowerLimit": "0",
                       "upperLimit": "100",
