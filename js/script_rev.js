@@ -1037,7 +1037,7 @@ FusionCharts.ready(function () {
             "dataSource": {
                    "chart": {
                       
-                      "subcaption": "Last week",
+                      
                       "lowerLimit": "0",
                       "upperLimit": "100",
                       "theme": "zune"
