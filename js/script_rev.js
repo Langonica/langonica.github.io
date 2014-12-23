@@ -1012,7 +1012,7 @@ var csatGauge = new FusionCharts({
         "type": "vbullet",
         "renderAt": c,
         "width": "100%",
-        "height": "100%",
+        "height": "80%",
         "dataFormat": "json",
         "dataSource":{
    "chart": {
@@ -1032,19 +1032,19 @@ var csatGauge = new FusionCharts({
             "minValue": "-30",
             "maxValue": "20",
             "code": "#e44a00",
-            "alpha": "25"
+            "alpha": "100"
          },
          {
             "minValue": "20",
             "maxValue": "70",
             "code": "#f8bd19",
-            "alpha": "25"
+            "alpha": "100"
          },
          {
             "minValue": "70",
             "maxValue": "120",
             "code": "#6baa01",
-            "alpha": "25"
+            "alpha": "100"
          }
       ]
    },
