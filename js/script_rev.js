@@ -1012,7 +1012,7 @@ var csatGauge = new FusionCharts({
         "type": "vbullet",
         "renderAt": c,
         "width": "100%",
-        "height": "75px",
+        "height": "100%",
         "dataFormat": "json",
         "dataSource":{
    "chart": {
@@ -1020,7 +1020,7 @@ var csatGauge = new FusionCharts({
       "numberSuffix": "°F",
 		"showTickMarks": "1",
 		"showTickValues": "1",
-		"lowerLimit": "-30",
+		"lowerLimit": "0",
 		"upperLimit": "120",
 		"plotfillpercent": "100",
 		"plotFillAlpha": "50",
@@ -1029,19 +1029,19 @@ var csatGauge = new FusionCharts({
    "colorRange": {
       "color": [
          {
-            "minValue": "-30",
-            "maxValue": "20",
+            "minValue": "0",
+            "maxValue": "40",
             "code": "#e44a00",
             "alpha": "100"
          },
          {
-            "minValue": "20",
-            "maxValue": "70",
+            "minValue": "40",
+            "maxValue": "80",
             "code": "#f8bd19",
             "alpha": "100"
          },
          {
-            "minValue": "70",
+            "minValue": "80",
             "maxValue": "120",
             "code": "#6baa01",
             "alpha": "100"
