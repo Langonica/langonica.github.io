@@ -1041,25 +1041,71 @@ function renderHumidity(e) {
 
 function gaugeHumidity(a,b,c){
 
-	var g = new JustGage({
-	   id: c,
-	   value: b,
-	   min: 0,
-	   max: 100,
-       symbol: "%",
-       label: "Humidity",
-	   titleFontColor: "#E0EFFF",
-	   valueFontColor : "#E0EFFF",
-	   labelFontColor : "#E0EFFF",
-	   gaugeColor: "#E0EFFF",
-	   levelColors: [ "#A5D1FF", "#52A7FF", "#278FFC" ],
-	   gaugeWidthScale: 1,
-	   noGradient : false,
-	   hideMinMax : true,
-	   donut: false
+// 	var g = new JustGage({
+// 	   id: c,
+// 	   value: b,
+// 	   min: 0,
+// 	   max: 100,
+//        symbol: "%",
+//        label: "Humidity",
+// 	   titleFontColor: "#E0EFFF",
+// 	   valueFontColor : "#E0EFFF",
+// 	   labelFontColor : "#E0EFFF",
+// 	   gaugeColor: "#E0EFFF",
+// 	   levelColors: [ "#A5D1FF", "#52A7FF", "#278FFC" ],
+// 	   gaugeWidthScale: 1,
+// 	   noGradient : false,
+// 	   hideMinMax : true,
+// 	   donut: false
+// 
+// 	});
 
-	});
+FusionCharts.ready(function () {
+    var csatGauge = new FusionCharts({
+        "type": "angulargauge",
+        "renderAt": c,
+        "width": "120",
+        "height": "67",
+        "dataFormat": "json",
+            "dataSource": {
+                   "chart": {
+                      "caption": "Customer Satisfaction Score",
+                      "subcaption": "Last week",
+                      "lowerLimit": "0",
+                      "upperLimit": "100",
+                      "theme": "fint"
+                   },
+                   "colorRange": {
+                      "color": [
+                         {
+                            "minValue": "0",
+                            "maxValue": "50",
+                            "code": "#e44a00"
+                         },
+                         {
+                            "minValue": "50",
+                            "maxValue": "75",
+                            "code": "#f8bd19"
+                         },
+                         {
+                            "minValue": "75",
+                            "maxValue": "100",
+                            "code": "#6baa01"
+                         }
+                      ]
+                   },
+                   "dials": {
+                      "dial": [
+                         {
+                            "value": "67"
+                         }
+                      ]
+                   }
+            }
+      });
 
+    csatGauge.render();
+});
 
 }
 
