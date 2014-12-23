@@ -1019,20 +1019,12 @@ var csatGauge = new FusionCharts({
       "showValue": "1",
       "theme": "dash"
    },
-   "colorRange": {
-      "color": [
-         {
-            "minValue": "-10",
-            "maxValue": "120",
-            "code": "#fff"
-         }
-      ]
-   },
    "dials": {
       "dial": [
          {
             "baseWidth": "4px",
             "topWidth": "2px",
+            "bgColor": "#fff",
             "value": b
          }
       ]
