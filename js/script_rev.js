@@ -1009,35 +1009,16 @@ if (b <= 50){
 }
 
 var csatGauge = new FusionCharts({
-        "type": "vbullet",
+        "type": "thermometer",
         "renderAt": c,
         "width": "100%",
         "height": "100%",
         "dataFormat": "json",
         "dataSource":{
    "chart": {
-      "plotFillColor": filler,
-      "numberSuffix": "°F",
-      "valueFontSize": "24px",
-      "valueFontColor": "#fff",
-		"showTickMarks": "1",
-		"showTickValues": "1",
-		"lowerLimit": "0",
-		"upperLimit": "120",
-		"plotfillpercent": "100",
-		"plotFillAlpha": "50",
+   
       "theme": "dash"
-   },
-   "colorRange": {
-      "color": [
-         {
-            "minValue": "0",
-            "maxValue": "120",
-            "code": "#9B4300",
-            "alpha": "100"
-         }
-      ]
-   },
+   }
    "value": b,
 }
       });
