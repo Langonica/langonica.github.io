@@ -1006,10 +1006,10 @@ function gaugeTemp(a,b,c){
 var csatGauge = new FusionCharts({
         "type": "angulargauge",
         "renderAt": c,
-        "width": "100%",
+        "width": "80%",
         "height": "100%",
-        "lowerLimit": "0",
-      "upperLimit": "100",
+        "lowerLimit": "-10",
+      	"upperLimit": "120",
         "dataFormat": "json",
         "dataSource":{
    "chart": {
