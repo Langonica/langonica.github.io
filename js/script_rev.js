@@ -1009,7 +1009,7 @@ if (b <= 50){
 }
 
 var csatGauge = new FusionCharts({
-        "type": "vBullet",
+        "type": "vbullet",
         "renderAt": c,
         "width": "100%",
         "height": "100%",
