@@ -1027,7 +1027,7 @@ var csatGauge = new FusionCharts({
    "colorRange": {
       "color": [
          {
-            "minValue": "0",
+            "minValue": "-20",
             "maxValue": "50",
             "code": "#e44a00",
             "alpha": "25"
