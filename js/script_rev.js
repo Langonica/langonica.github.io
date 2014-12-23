@@ -1006,27 +1006,6 @@ function renderTemp(e) {
 	gaugeTemp(foo,res,unique);
 }
 
-function renderHumidity(e) {
-    e.find(".icon").remove();
-    var foo = e.attr("data-value");
-    var res = foo.replace("%", "");
-    var unique = e.attr("data-device") + "b";
-    e.append("<div class='gaugePos' id='"+unique+"'></div><div class='footer'><i class='fa fa-fw wi wi-sprinkles'></i></div>");
-	gaugeHumidity(foo,res,unique);
-}
-
-function renderBatt(e) {
-    e.find(".icon").remove();
-    var foo = e.attr("data-value");
-    var res = foo.replace("%", "");
-    var unique = e.attr("data-device") + "c";
-    e.append("<div class='gaugePos' id='"+unique+"'></div><div class='footer'><span class='batt'></span></div>");
-	gaugeBattery(foo,res,unique);
-}
-
-
-
-
 function gaugeTemp(a,b,c){
 
 	var g = new JustGage({
@@ -1051,52 +1030,14 @@ function gaugeTemp(a,b,c){
 
 }
 
-FusionCharts.ready(function (a,b,c) {
-    var csatGauge = new FusionCharts({
-        "type": "angulargauge",
-        "renderAt": "chart-container",
-        "width": "400",
-        "height": "250",
-        "dataFormat": "json",
-            "dataSource": {
-                   "chart": {
-                      "caption": "Customer Satisfaction Score",
-                      "subcaption": "Last week",
-                      "lowerLimit": "0",
-                      "upperLimit": "100",
-                      "theme": "fint"
-                   },
-                   "colorRange": {
-                      "color": [
-                         {
-                            "minValue": "0",
-                            "maxValue": "50",
-                            "code": "#e44a00"
-                         },
-                         {
-                            "minValue": "50",
-                            "maxValue": "75",
-                            "code": "#f8bd19"
-                         },
-                         {
-                            "minValue": "75",
-                            "maxValue": "100",
-                            "code": "#6baa01"
-                         }
-                      ]
-                   },
-                   "dials": {
-                      "dial": [
-                         {
-                            "value": "67"
-                         }
-                      ]
-                   }
-            }
-      });
-
-    csatGauge.render();
-});
+function renderHumidity(e) {
+    e.find(".icon").remove();
+    var foo = e.attr("data-value");
+    var res = foo.replace("%", "");
+    var unique = e.attr("data-device") + "b";
+    e.append("<div class='gaugePos' id='"+unique+"'></div><div class='footer'><i class='fa fa-fw wi wi-sprinkles'></i></div>");
+	gaugeHumidity(foo,res,unique);
+}
 
 function gaugeHumidity(a,b,c){
 
@@ -1120,6 +1061,15 @@ function gaugeHumidity(a,b,c){
 	});
 
 
+}
+
+function renderBatt(e) {
+    e.find(".icon").remove();
+    var foo = e.attr("data-value");
+    var res = foo.replace("%", "");
+    var unique = e.attr("data-device") + "c";
+    e.append("<div class='gaugePos' id='"+unique+"'></div><div class='footer'><span class='batt'></span></div>");
+	gaugeBattery(foo,res,unique);
 }
 
 function gaugeBattery(a,b,c){
