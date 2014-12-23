@@ -1022,6 +1022,7 @@ var csatGauge = new FusionCharts({
 		"showTickValues": "1",
 		"lowerLimit": "-30",
 		"upperLimit": "120",
+		"plotAsDot": "1",
       "theme": "dash"
    },
    "colorRange": {
