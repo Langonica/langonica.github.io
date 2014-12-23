@@ -1016,7 +1016,7 @@ var csatGauge = new FusionCharts({
         "dataFormat": "json",
         "dataSource":{
    "chart": {
-      gaugeFillColor: filler,
+      "gaugeFillColor": filler,
       "theme": "dash"
    },
    "value": b,
