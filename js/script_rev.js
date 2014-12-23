@@ -1031,7 +1031,7 @@ var csatGauge = new FusionCharts({
       "showbelow": "0",
       "groups": [
          {
-            "id": "indicator",
+            "id": c,
             "items": [
                {
                   
