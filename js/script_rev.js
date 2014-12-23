@@ -1017,7 +1017,7 @@ var csatGauge = new FusionCharts({
       "numberSuffix": "°F",
       "showhovereffect": "0",
       "thmFillColor": "#008ee4",
-      "thmHeight": "120",
+      "thmHeight": "80",
       "showGaugeBorder": "1",
       "gaugeBorderColor": "#008ee4",
       "gaugeBorderThickness": "2",
