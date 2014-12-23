@@ -1197,8 +1197,8 @@ function updateTile(e) {
             if (e.value != t.attr("data-value")) spinner(t);
             t.attr("data-value", e.value);
             if (e.isValue) {
-                renderValue(t);
-                renderTemp(e)
+                renderValue(t)
+                
             } else {
                 t.removeClass("inactive active").addClass(e.active);
                 t.attr("data-active", e.active)
