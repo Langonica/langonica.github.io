@@ -1008,25 +1008,6 @@ function renderTemp(e) {
 
 function gaugeTemp(a,b,c){
 
-// 	var g = new JustGage({
-// 	   id: c,
-// 	   value: b,
-// 	   min: 0,
-// 	   max: 100,
-//        symbol: "°",
-//        label: "Degrees",
-// 	   titleFontColor: "#FFC191",
-// 	   valueFontColor : "#FFC191",
-// 	   labelFontColor : "#FFC191",
-// 	   gaugeColor: "#FFC191",
-// 	   levelColors: [ "#F5730F", "#A04500", "#763300" ],
-// 	   gaugeWidthScale: 1,
-// 	   noGradient : false,
-// 	   hideMinMax : true,
-// 	   donut: false
-// 
-// 	});
-
 FusionCharts.ready(function () {
     var csatGauge = new FusionCharts({
         "type": "angulargauge",
