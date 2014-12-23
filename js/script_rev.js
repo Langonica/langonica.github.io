@@ -1040,7 +1040,7 @@ FusionCharts.ready(function () {
                       "subcaption": "Last week",
                       "lowerLimit": "0",
                       "upperLimit": "100",
-                      "theme": "fint"
+                      "theme": "zune"
                    },
                    "colorRange": {
                       "color": [
