@@ -1032,7 +1032,7 @@ FusionCharts.ready(function () {
         "type": "angulargauge",
         "renderAt": c,
         "width": "120",
-        "height": "67",
+        "height": "120",
         "dataFormat": "json",
             "dataSource": {
                    "chart": {
@@ -1040,7 +1040,7 @@ FusionCharts.ready(function () {
                       
                       "lowerLimit": "0",
                       "upperLimit": "100",
-                      "theme": "carbon"
+                      
                    },
                    "colorRange": {
                       "color": [
