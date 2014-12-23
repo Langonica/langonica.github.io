@@ -13,7 +13,7 @@ FusionCharts.register('theme', {
                 paletteColors: '#04476c,#4d998d,#77be99,#a7dca6,#cef19a,#0e948c,#64ad93,#8fcda0,#bbe7a0,#dcefc1',
                 labelDisplay: 'auto',
                 baseFontColor: '#333333',
-                baseFont: 'Helvetica Neue,Arial',
+                baseFont: 'Open Sans,Helvetica Neue,Arial',
                 captionFontSize: '14',
                 subcaptionFontSize: '14',
                 subcaptionFontBold: '0',
