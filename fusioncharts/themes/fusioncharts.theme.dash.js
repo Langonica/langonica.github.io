@@ -381,6 +381,22 @@ FusionCharts.register('theme', {
         thermometer: {
             chart: {
                 gaugeFillColor: '#fff',
+                lowerLimit: '-10',
+      			upperLimit: '120',
+      			decimals: '1',
+      			numberSuffix: '°F',
+      			showhovereffect: '0',
+      			thmFillColor: '#008ee4',
+      			thmHeight: '65',
+      			showGaugeBorder: '1',
+      			gaugeBorderColor: '#008ee4',
+      			showTickMarks: '0',
+      			showTickValues: '0',
+      			gaugeBorderThickness: '2',
+      			gaugeBorderAlpha: '30',
+      			thmOriginX: '50',
+      			chartBottomMargin: '0',
+      			valueFontColor: "#fff"
                 
             }
         },
