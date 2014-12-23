@@ -1016,7 +1016,7 @@ var csatGauge = new FusionCharts({
 
       "lowerLimit": "-10",
       "upperLimit": "100",
-      "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
+      
       "gaugeFillRatio": "15",
       "theme": "dash"
    },
