@@ -1009,7 +1009,7 @@ if (b <= 50){
 }
 
 var csatGauge = new FusionCharts({
-        "type": "thermometer",
+        "type": "vBullet",
         "renderAt": c,
         "width": "100%",
         "height": "100%",
