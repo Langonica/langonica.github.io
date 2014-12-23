@@ -386,7 +386,6 @@ FusionCharts.register('theme', {
       			decimals: '1',
       			numberSuffix: '°F',
       			showhovereffect: '0',
-      			
       			thmHeight: '65',
       			showGaugeBorder: '1',
       			gaugeBorderColor: '#008ee4',
@@ -396,7 +395,8 @@ FusionCharts.register('theme', {
       			gaugeBorderAlpha: '30',
       			thmOriginX: '50',
       			chartBottomMargin: '0',
-      			valueFontColor: "#000"
+      			valueFontColor: "#fff",
+      			valueFontSize: "18px"
                 
             }
         },
