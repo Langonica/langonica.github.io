@@ -1064,7 +1064,7 @@ FusionCharts.ready(function () {
                    "dials": {
                       "dial": [
                          {
-                            "value": "67"
+                            "value": b
                          }
                       ]
                    }
