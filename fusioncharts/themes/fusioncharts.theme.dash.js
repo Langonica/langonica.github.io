@@ -380,7 +380,7 @@ FusionCharts.register('theme', {
         },
         thermometer: {
             chart: {
-                gaugeFillColor: '#04476c',
+                gaugeFillColor: '#fff',
                 
             }
         },
