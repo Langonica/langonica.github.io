@@ -1031,10 +1031,13 @@ var csatGauge = new FusionCharts({
       "showbelow": "0",
       "groups": [
          {
-            "id": c + "therm",
+            "id": "indicator",
             "items": [
                {
-                  
+                  "id": "background",
+                  "type": "rectangle",
+                  "alpha": "50",
+                  "fillColor": "#AABBCC",
                   "x": "$gaugeEndX-40",
                   "tox": "$gaugeEndX",
                   "y": "$gaugeEndY+54",
