@@ -1017,6 +1017,7 @@ var csatGauge = new FusionCharts({
         "dataSource":{
    "chart": {
       "plotFillColor": filler,
+      "numberSuffix": "°F",
       "theme": "dash"
    },
    "value": b,
