@@ -1064,7 +1064,8 @@ FusionCharts.ready(function () {
                    "dials": {
                       "dial": [
                          {
-                            "value": b
+                            "value": b,
+                            "bgAlpha": "0"
                          }
                       ]
                    }
