@@ -1014,7 +1014,7 @@ var csatGauge = new FusionCharts({
 
       "theme": "dash"
    },
-   "value": c,
+   "value": c
    
 }
       });
