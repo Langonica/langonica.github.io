@@ -1008,6 +1008,8 @@ var csatGauge = new FusionCharts({
         "renderAt": c,
         "width": "100%",
         "height": "100%",
+        "lowerLimit": "0",
+      "upperLimit": "100",
         "dataFormat": "json",
         "dataSource":{
    "chart": {
