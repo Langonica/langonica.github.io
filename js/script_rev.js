@@ -1024,6 +1024,28 @@ var csatGauge = new FusionCharts({
 		"upperLimit": "120",
       "theme": "dash"
    },
+   "colorRange": {
+      "color": [
+         {
+            "minValue": "0",
+            "maxValue": "50",
+            "code": "#e44a00",
+            "alpha": "25"
+         },
+         {
+            "minValue": "50",
+            "maxValue": "75",
+            "code": "#f8bd19",
+            "alpha": "25"
+         },
+         {
+            "minValue": "75",
+            "maxValue": "120",
+            "code": "#6baa01",
+            "alpha": "25"
+         }
+      ]
+   },
    "value": b,
 }
       });
