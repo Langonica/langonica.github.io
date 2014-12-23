@@ -1013,7 +1013,7 @@ FusionCharts.ready(function () {
         "type": "angulargauge",
         "renderAt": c,
         "width": "120",
-        "height": "120",
+        "height": "75",
         "dataFormat": "json",
             "dataSource": {
                    "chart": {
