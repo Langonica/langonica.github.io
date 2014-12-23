@@ -1002,6 +1002,11 @@ function renderTemp(e) {
 
 function gaugeTemp(a,b,c){
 
+if (b <= 50){
+	filler ="#000";
+}else if (b >= 51){
+	filler ="#fff";
+}
 
 var csatGauge = new FusionCharts({
         "type": "thermometer",
@@ -1011,7 +1016,7 @@ var csatGauge = new FusionCharts({
         "dataFormat": "json",
         "dataSource":{
    "chart": {
-      
+      gaugeFillColor: filler,
       "theme": "dash"
    },
    "value": b,
