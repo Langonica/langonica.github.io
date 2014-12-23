@@ -1021,35 +1021,15 @@ var csatGauge = new FusionCharts({
       "showGaugeBorder": "1",
       "gaugeBorderColor": "#008ee4",
       "showTickMarks": "0",
-      "showTickValues": "1",
+      "showTickValues": "0",
       "gaugeBorderThickness": "2",
       "gaugeBorderAlpha": "30",
       "thmOriginX": "50",
-      "chartBottomMargin": "-20",
-      "valueFontColor": "#000000",
+      "chartBottomMargin": "0",
+      "valueFontColor": "#fff",
       "theme": "dash"
    },
    "value": b,
-   "annotations": {
-      "showbelow": "0",
-      "groups": [
-         {
-            "id": "indicator",
-            "items": [
-               {
-                  "id": "background",
-                  "type": "rectangle",
-                  "alpha": "50",
-                  "fillColor": "#AABBCC",
-                  "x": "$gaugeEndX-40",
-                  "tox": "$gaugeEndX",
-                  "y": "$gaugeEndY+54",
-                  "toy": "$gaugeEndY+72"
-               }
-            ]
-         }
-      ]
-   }
 }
       });
 	csatGauge.setTransparent(true);
