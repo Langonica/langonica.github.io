@@ -1040,6 +1040,8 @@ FusionCharts.ready(function () {
                       
                       "lowerLimit": "0",
                       "upperLimit": "100",
+                      "showBorder": "0",
+                      "bgAlpha": "0"
                       
                    },
                    "colorRange": {
@@ -1064,8 +1066,7 @@ FusionCharts.ready(function () {
                    "dials": {
                       "dial": [
                          {
-                            "value": b,
-                            "bgAlpha": "0"
+                            "value": b
                          }
                       ]
                    }
