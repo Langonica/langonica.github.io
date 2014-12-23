@@ -1050,7 +1050,7 @@ function gaugeTemp(a,b,c){
             }
       });
 
-    csatGauge.render();
+   
 
 
 }
