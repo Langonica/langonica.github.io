@@ -1047,7 +1047,9 @@ FusionCharts.ready(function () {
                    "dials": {
                       "dial": [
                          {
-                            "value": b
+                            "value": b,
+                            "showBorder": "0",
+                      		"bgAlpha": "0"
                          }
                       ]
                    }
@@ -1070,24 +1072,24 @@ function renderHumidity(e) {
 
 function gaugeHumidity(a,b,c){
 
-	var g = new JustGage({
-	   id: c,
-	   value: b,
-	   min: 0,
-	   max: 100,
-       symbol: "%",
-       label: "Humidity",
-	   titleFontColor: "#E0EFFF",
-	   valueFontColor : "#E0EFFF",
-	   labelFontColor : "#E0EFFF",
-	   gaugeColor: "#E0EFFF",
-	   levelColors: [ "#A5D1FF", "#52A7FF", "#278FFC" ],
-	   gaugeWidthScale: 1,
-	   noGradient : false,
-	   hideMinMax : true,
-	   donut: false
-
-	});
+// 	var g = new JustGage({
+// 	   id: c,
+// 	   value: b,
+// 	   min: 0,
+// 	   max: 100,
+//        symbol: "%",
+//        label: "Humidity",
+// 	   titleFontColor: "#E0EFFF",
+// 	   valueFontColor : "#E0EFFF",
+// 	   labelFontColor : "#E0EFFF",
+// 	   gaugeColor: "#E0EFFF",
+// 	   levelColors: [ "#A5D1FF", "#52A7FF", "#278FFC" ],
+// 	   gaugeWidthScale: 1,
+// 	   noGradient : false,
+// 	   hideMinMax : true,
+// 	   donut: false
+// 
+// 	});
 
 
 }
@@ -1103,24 +1105,24 @@ function renderBatt(e) {
 
 function gaugeBattery(a,b,c){
 
-	var g = new JustGage({
-	   id: c,
-	   value: b,
-	   min: 0,
-	   max: 100,
-       symbol: "%",
-       label: "Battery",
-	   titleFontColor: "#D7A3BB",
-	   valueFontColor : "#D7A3BB",
-	   labelFontColor : "#D7A3BB",
-	   gaugeColor: "#D7A3BB",
-	   levelColors: [ "#B46D8D", "#7C294F", "#5A1032"  ],
-	   gaugeWidthScale: 1,
-	   noGradient : true,
-	   hideMinMax : true,
-	   donut: false
-
-	});
+// 	var g = new JustGage({
+// 	   id: c,
+// 	   value: b,
+// 	   min: 0,
+// 	   max: 100,
+//        symbol: "%",
+//        label: "Battery",
+// 	   titleFontColor: "#D7A3BB",
+// 	   valueFontColor : "#D7A3BB",
+// 	   labelFontColor : "#D7A3BB",
+// 	   gaugeColor: "#D7A3BB",
+// 	   levelColors: [ "#B46D8D", "#7C294F", "#5A1032"  ],
+// 	   gaugeWidthScale: 1,
+// 	   noGradient : true,
+// 	   hideMinMax : true,
+// 	   donut: false
+// 
+// 	});
 
 
 }
