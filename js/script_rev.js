@@ -1040,7 +1040,7 @@ FusionCharts.ready(function () {
                       
                       "lowerLimit": "0",
                       "upperLimit": "100",
-                      "theme": "zune"
+                      "theme": "carbon"
                    },
                    "colorRange": {
                       "color": [
