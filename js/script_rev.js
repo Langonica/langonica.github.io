@@ -1023,7 +1023,7 @@ FusionCharts.ready(function () {
                       "upperLimit": "100",
                       "showBorder": "0",
                       "bgAlpha": "0",
-                      "theme": "carbon"
+                      "theme": "ocean"
                       
                    },
                    "colorRange": {
