@@ -1018,8 +1018,8 @@ var csatGauge = new FusionCharts({
    "chart": {
       "plotFillColor": filler,
       "numberSuffix": "°F",
-		"showTickMarks": "0",
-		"showTickValues": "0",
+		"showTickMarks": "1",
+		"showTickValues": "1",
 		"lowerLimit": "-30",
 		"upperLimit": "120",
       "theme": "dash"
