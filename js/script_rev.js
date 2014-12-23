@@ -1004,7 +1004,7 @@ function gaugeTemp(a,b,c){
 
 
 var csatGauge = new FusionCharts({
-        "type": "angulargauge",
+        "type": "vBullet",
         "renderAt": c,
         "width": "100%",
         "height": "100%",
@@ -1012,14 +1012,14 @@ var csatGauge = new FusionCharts({
         "dataSource":{
                "chart": {
                   
-                  "lowerLimit": "0",
-                  "upperLimit": "100",
+                  "lowerLimit": "-30",
+                  "upperLimit": "120",
                   "theme": "dash"
                },
                "colorRange": {
                   "color": [
                      {
-                        "minValue": "0",
+                        "minValue": "-30",
                         "maxValue": "50",
                         "code": "#e44a00"
                      },
@@ -1030,18 +1030,13 @@ var csatGauge = new FusionCharts({
                      },
                      {
                         "minValue": "75",
-                        "maxValue": "100",
+                        "maxValue": "120",
                         "code": "#6baa01"
                      }
                   ]
                },
-               "dials": {
-                  "dial": [
-                     {
-                        "value": b
-                     }
-                  ]
-               }
+               
+               "value": b
             }
       });
 	csatGauge.setTransparent(true);
