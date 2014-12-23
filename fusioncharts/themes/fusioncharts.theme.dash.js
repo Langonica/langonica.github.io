@@ -386,7 +386,7 @@ FusionCharts.register('theme', {
       			decimals: '1',
       			numberSuffix: '°F',
       			showhovereffect: '0',
-      			thmBulbRadius: "10",
+      			thmBulbRadius: "12",
       			thmHeight: '100%',
       			showGaugeBorder: '1',
       			gaugeBorderColor: '#008ee4',
