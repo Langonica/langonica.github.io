@@ -433,7 +433,7 @@ FusionCharts.register('theme', {
         vbullet: {
             chart: {
                 plotFillColor: '#04476c',
-                targetColor: '#4d998d'
+                targetColor: '#4d998d',
                 lowerLimit: '-20',
       			upperLimit: '120'
             }
