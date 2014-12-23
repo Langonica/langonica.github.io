@@ -996,7 +996,7 @@ function renderTemp(e) {
     var foo = e.attr("data-value");
     var res = foo.replace("°", "");
     var unique = e.attr("data-device") + "TEMP";
-    e.append("<div id='"+unique+"'></div><div class='footer'><i class='fa fa-fw wi wi-thermometer'></i></div>");
+    e.append("<div class='gaugePos' id='"+unique+"'></div><div class='footer'><i class='fa fa-fw wi wi-thermometer'></i></div>");
 	gaugeTemp(foo,res,unique);
 }
 
