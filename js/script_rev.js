@@ -1004,40 +1004,29 @@ function gaugeTemp(a,b,c){
 
 
 var csatGauge = new FusionCharts({
-        "type": "vBullet",
+        "type": "thermometer",
         "renderAt": c,
         "width": "100%",
         "height": "100%",
         "dataFormat": "json",
         "dataSource":{
-               "chart": {
-                  
-                  "lowerLimit": "-30",
-                  "upperLimit": "120",
-                  "theme": "dash"
-               },
-               "colorRange": {
-                  "color": [
-                     {
-                        "minValue": "-30",
-                        "maxValue": "50",
-                        "code": "#e44a00"
-                     },
-                     {
-                        "minValue": "50",
-                        "maxValue": "75",
-                        "code": "#f8bd19"
-                     },
-                     {
-                        "minValue": "75",
-                        "maxValue": "120",
-                        "code": "#6baa01"
-                     }
-                  ]
-               },
-               
-               "value": b
-            }
+               {
+   "chart": {
+      "caption": "Temperature Monitor",
+      "subcaption": " Central cold store",
+      "lowerLimit": "-10",
+      "upperLimit": "0",
+      "numberSuffix": "°C",
+      "showhovereffect": "1",
+      "decimals": "1",
+      "gaugeFillColor": "#008ee4",
+      "gaugeFillAlpha": "70",
+      "thmOriginX": "100",
+      "theme": "fint",
+      "chartBottomMargin": "20"
+   },
+   "value": b
+}
       });
 	csatGauge.setTransparent(true);
     csatGauge.render();
