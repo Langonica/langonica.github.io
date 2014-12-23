@@ -1008,7 +1008,7 @@ function renderTemp(e) {
 
 function gaugeTemp(a,b,c){
 
-FusionCharts.ready(function () {
+
     var csatGauge = new FusionCharts({
         "type": "angulargauge",
         "renderAt": c,
@@ -1058,7 +1058,7 @@ FusionCharts.ready(function () {
       });
 
     csatGauge.render();
-});
+
 
 }
 
