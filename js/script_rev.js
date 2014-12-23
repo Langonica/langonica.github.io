@@ -995,7 +995,7 @@ function renderTemp(e) {
     e.find(".icon").remove();
     var foo = e.attr("data-value");
     var res = foo.replace("°", "");
-    var unique = e.attr("data-device") + "a";
+    var unique = e.attr("data-device") + "TEMP";
     e.append("<div id='"+unique+"'></div><div class='footer'><i class='fa fa-fw wi wi-thermometer'></i></div>");
 	gaugeTemp(foo,res,unique);
 }
@@ -1003,54 +1003,50 @@ function renderTemp(e) {
 function gaugeTemp(a,b,c){
 
 
-    var csatGauge = new FusionCharts({
+var csatGauge = new FusionCharts({
         "type": "angulargauge",
         "renderAt": c,
         "width": "120",
         "height": "75",
         "dataFormat": "json",
-            "dataSource": {
-                   "chart": {
-                      
-                      
-                      "lowerLimit": "0",
-                      "upperLimit": "100",
-                      "showBorder": "0",
-                      "bgAlpha": "0",
-                      "theme": "ocean"
-                      
-                   },
-                   "colorRange": {
-                      "color": [
-                         {
-                            "minValue": "0",
-                            "maxValue": "50",
-                            "code": "#e44a00"
-                         },
-                         {
-                            "minValue": "50",
-                            "maxValue": "75",
-                            "code": "#f8bd19"
-                         },
-                         {
-                            "minValue": "75",
-                            "maxValue": "100",
-                            "code": "#6baa01"
-                         }
-                      ]
-                   },
-                   "dials": {
-                      "dial": [
-                         {
-                            "value": b,
-                            "showBorder": "0",
-                      		"bgAlpha": "0"
-                         }
-                      ]
-                   }
+        "dataSource":{
+               "chart": {
+                  "caption": "Customer Satisfaction Score",
+                  "subcaption": "Last week",
+                  "lowerLimit": "0",
+                  "upperLimit": "100",
+                  "theme": "ocean"
+               },
+               "colorRange": {
+                  "color": [
+                     {
+                        "minValue": "0",
+                        "maxValue": "50",
+                        "code": "#e44a00"
+                     },
+                     {
+                        "minValue": "50",
+                        "maxValue": "75",
+                        "code": "#f8bd19"
+                     },
+                     {
+                        "minValue": "75",
+                        "maxValue": "100",
+                        "code": "#6baa01"
+                     }
+                  ]
+               },
+               "dials": {
+                  "dial": [
+                     {
+                        "value": b
+                     }
+                  ]
+               }
             }
       });
-	csatGauge.render();
+
+    csatGauge.render();
    
 
 
