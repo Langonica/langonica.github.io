@@ -94,7 +94,7 @@ body {background-color: #1d1d1d!important;}
 .tiles {margin:2px;}
 .switch, .dimmer, .momentary, .clock, .lock, .refresh, .link, .menu, .thermostat, .music i, .holiday, .camera {cursor: pointer;}
 .tiles {overflow:hidden}
-.tile {width: 120px; height: 120px;}
+.tile {width: 120px; height: 110px;}
 .w2 {width: 240px;}
 .h2 {height:240px;}
 
