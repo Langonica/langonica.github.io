@@ -1003,7 +1003,7 @@ function renderTemp(e) {
 function gaugeTemp(a,b,c){
 
 
-    $(c).insertFusionCharts({
+    var csatGauge = new FusionCharts({
         "type": "angulargauge",
         "width": "120",
         "height": "75",
@@ -1049,7 +1049,7 @@ function gaugeTemp(a,b,c){
                    }
             }
       });
-
+	csatGauge.render();
    
 
 
