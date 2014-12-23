@@ -1003,52 +1003,52 @@ function renderTemp(e) {
 function gaugeTemp(a,b,c){
 
 
-//     $(c).insertFusionCharts({
-//         "type": "angulargauge",
-//         "width": "120",
-//         "height": "75",
-//         "dataFormat": "json",
-//             "dataSource": {
-//                    "chart": {
-//                       
-//                       
-//                       "lowerLimit": "0",
-//                       "upperLimit": "100",
-//                       "showBorder": "0",
-//                       "bgAlpha": "0",
-//                       "theme": "ocean"
-//                       
-//                    },
-//                    "colorRange": {
-//                       "color": [
-//                          {
-//                             "minValue": "0",
-//                             "maxValue": "50",
-//                             "code": "#e44a00"
-//                          },
-//                          {
-//                             "minValue": "50",
-//                             "maxValue": "75",
-//                             "code": "#f8bd19"
-//                          },
-//                          {
-//                             "minValue": "75",
-//                             "maxValue": "100",
-//                             "code": "#6baa01"
-//                          }
-//                       ]
-//                    },
-//                    "dials": {
-//                       "dial": [
-//                          {
-//                             "value": b,
-//                             "showBorder": "0",
-//                       		"bgAlpha": "0"
-//                          }
-//                       ]
-//                    }
-//             }
-//       });
+    $(c).insertFusionCharts({
+        "type": "angulargauge",
+        "width": "120",
+        "height": "75",
+        "dataFormat": "json",
+            "dataSource": {
+                   "chart": {
+                      
+                      
+                      "lowerLimit": "0",
+                      "upperLimit": "100",
+                      "showBorder": "0",
+                      "bgAlpha": "0",
+                      "theme": "ocean"
+                      
+                   },
+                   "colorRange": {
+                      "color": [
+                         {
+                            "minValue": "0",
+                            "maxValue": "50",
+                            "code": "#e44a00"
+                         },
+                         {
+                            "minValue": "50",
+                            "maxValue": "75",
+                            "code": "#f8bd19"
+                         },
+                         {
+                            "minValue": "75",
+                            "maxValue": "100",
+                            "code": "#6baa01"
+                         }
+                      ]
+                   },
+                   "dials": {
+                      "dial": [
+                         {
+                            "value": b,
+                            "showBorder": "0",
+                      		"bgAlpha": "0"
+                         }
+                      ]
+                   }
+            }
+      });
 
    
 
