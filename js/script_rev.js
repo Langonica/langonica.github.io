@@ -1012,10 +1012,10 @@ var csatGauge = new FusionCharts({
         "dataSource":{
    "chart": {
       "lowerLimit": "-10",
-      "upperLimit": "0",
+      "upperLimit": "120",
       "decimals": "1",
       "numberSuffix": "°F",
-      "showhovereffect": "1",
+      "showhovereffect": "0",
       "thmFillColor": "#008ee4",
       "showGaugeBorder": "1",
       "gaugeBorderColor": "#008ee4",
@@ -1024,7 +1024,7 @@ var csatGauge = new FusionCharts({
       "thmOriginX": "100",
       "chartBottomMargin": "20",
       "valueFontColor": "#000000",
-      "theme": "fint"
+      "theme": "dash"
    },
    "value": b,
    "annotations": {
@@ -1034,10 +1034,7 @@ var csatGauge = new FusionCharts({
             "id": "indicator",
             "items": [
                {
-                  "id": "background",
-                  "type": "rectangle",
-                  "alpha": "50",
-                  "fillColor": "#AABBCC",
+                  
                   "x": "$gaugeEndX-40",
                   "tox": "$gaugeEndX",
                   "y": "$gaugeEndY+54",
