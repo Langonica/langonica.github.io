@@ -989,13 +989,7 @@ function setIcons() {
     })
 }
 
-function renderSlider(e, t) {
-    e.find(".slider-container").remove();
-    e.append("<div class='slider-container'><div class='full-width-slider'><input value='" + e.attr("data-level") + "' min='" + t + "' max='10' type='range' step='1' data-mini='true' data-popup-enabled='true' data-disabled='false' data-highlight='true'></div></div>").find("input").slider();
-    $(".full-width-slider").click(function(e) {
-        e.stopImmediatePropagation()
-    })
-}
+
 
 function renderTemp(e) {
     e.find(".icon").remove();
@@ -1009,9 +1003,8 @@ function renderTemp(e) {
 function gaugeTemp(a,b,c){
 
 
-    var csatGauge = new FusionCharts({
+    $("#ssss").insertFusionCharts({
         "type": "angulargauge",
-        "renderAt": c,
         "width": "120",
         "height": "75",
         "dataFormat": "json",
@@ -1073,24 +1066,6 @@ function renderHumidity(e) {
 
 function gaugeHumidity(a,b,c){
 
-// 	var g = new JustGage({
-// 	   id: c,
-// 	   value: b,
-// 	   min: 0,
-// 	   max: 100,
-//        symbol: "%",
-//        label: "Humidity",
-// 	   titleFontColor: "#E0EFFF",
-// 	   valueFontColor : "#E0EFFF",
-// 	   labelFontColor : "#E0EFFF",
-// 	   gaugeColor: "#E0EFFF",
-// 	   levelColors: [ "#A5D1FF", "#52A7FF", "#278FFC" ],
-// 	   gaugeWidthScale: 1,
-// 	   noGradient : false,
-// 	   hideMinMax : true,
-// 	   donut: false
-// 
-// 	});
 
 
 }
@@ -1106,26 +1081,15 @@ function renderBatt(e) {
 
 function gaugeBattery(a,b,c){
 
-// 	var g = new JustGage({
-// 	   id: c,
-// 	   value: b,
-// 	   min: 0,
-// 	   max: 100,
-//        symbol: "%",
-//        label: "Battery",
-// 	   titleFontColor: "#D7A3BB",
-// 	   valueFontColor : "#D7A3BB",
-// 	   labelFontColor : "#D7A3BB",
-// 	   gaugeColor: "#D7A3BB",
-// 	   levelColors: [ "#B46D8D", "#7C294F", "#5A1032"  ],
-// 	   gaugeWidthScale: 1,
-// 	   noGradient : true,
-// 	   hideMinMax : true,
-// 	   donut: false
-// 
-// 	});
 
+}
 
+function renderSlider(e, t) {
+    e.find(".slider-container").remove();
+    e.append("<div class='slider-container'><div class='full-width-slider'><input value='" + e.attr("data-level") + "' min='" + t + "' max='10' type='range' step='1' data-mini='true' data-popup-enabled='true' data-disabled='false' data-highlight='true'></div></div>").find("input").slider();
+    $(".full-width-slider").click(function(e) {
+        e.stopImmediatePropagation()
+    })
 }
 
 function renderValue(e) {
