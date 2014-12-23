@@ -1012,7 +1012,7 @@ var csatGauge = new FusionCharts({
         "type": "vbullet",
         "renderAt": c,
         "width": "100%",
-        "height": "80%",
+        "height": "75px",
         "dataFormat": "json",
         "dataSource":{
    "chart": {
