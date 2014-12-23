@@ -391,12 +391,13 @@ FusionCharts.register('theme', {
       			showGaugeBorder: '1',
       			gaugeBorderColor: '#008ee4',
       			showTickMarks: '0',
-      			showTickValues: '0',
+      			showTickValues: '1',
+      			tickFontColor: '#fff',
       			gaugeBorderThickness: '2',
       			gaugeBorderAlpha: '30',
       			thmOriginX: '50',
       			chartBottomMargin: '0',
-      			valueFontColor: '#000',
+      			valueFontColor: '#fff',
       			valueFontSize: '18px'
                 
             }
