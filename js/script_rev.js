@@ -1013,11 +1013,40 @@ var csatGauge = new FusionCharts({
         "dataFormat": "json",
         "dataSource":{
    "chart": {
-
-      "theme": "dash"
+      "caption": "Customer Satisfaction Score",
+      "subcaption": "Last week",
+      "lowerLimit": "0",
+      "upperLimit": "100",
+      "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
+      "gaugeFillRatio": "15",
+      "theme": "fint"
    },
-   "value": b
-   
+   "colorRange": {
+      "color": [
+         {
+            "minValue": "0",
+            "maxValue": "50",
+            "code": "#e44a00"
+         },
+         {
+            "minValue": "50",
+            "maxValue": "75",
+            "code": "#f8bd19"
+         },
+         {
+            "minValue": "75",
+            "maxValue": "100",
+            "code": "#6baa01"
+         }
+      ]
+   },
+   "dials": {
+      "dial": [
+         {
+            "value": b
+         }
+      ]
+   }
 }
       });
 	csatGauge.setTransparent(true);
