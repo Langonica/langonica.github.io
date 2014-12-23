@@ -1023,7 +1023,7 @@ var csatGauge = new FusionCharts({
       "gaugeBorderThickness": "2",
       "gaugeBorderAlpha": "30",
       "thmOriginX": "60",
-      "chartBottomMargin": "20",
+      "chartBottomMargin": "0",
       "valueFontColor": "#000000",
       "theme": "dash"
    },
