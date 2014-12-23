@@ -1014,9 +1014,6 @@ var csatGauge = new FusionCharts({
                   
                   "lowerLimit": "0",
                   "upperLimit": "100",
-                  "canvasbgAlpha": "0",
-                  "showBorder": "0",
-                  "bgAlpha": "0",
                   "theme": "dash"
                },
                "colorRange": {
