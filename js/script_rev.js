@@ -1004,7 +1004,7 @@ function gaugeTemp(a,b,c){
 
 
 var csatGauge = new FusionCharts({
-        "type": "temperature",
+        "type": "thermometer",
         "renderAt": c,
         "width": "100%",
         "height": "100%",
