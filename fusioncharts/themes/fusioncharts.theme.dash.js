@@ -1,5 +1,5 @@
 /*
- Zune Theme v0.0.3
+ Dash Theme v0.0.1
  FusionCharts JavaScript Library
 
  Copyright FusionCharts Technologies LLP
