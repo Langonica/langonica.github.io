@@ -1019,7 +1019,7 @@ var csatGauge = new FusionCharts({
       "showGaugeBorder": "0",
       
       "valueBelowPivot": "1",
-      "theme": "dash"
+      
    },
    "colorRange": {
       "color": [
