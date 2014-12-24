@@ -284,7 +284,7 @@ FusionCharts.register('theme', {
         angulargauge: {
             chart: {
                 pivotFillColor: '#ffffff',
-                pivotRadius: '10',
+                pivotRadius: '4',
                 gaugeFillMix: '{light+0}',
                 showTickValues: '1',
                 majorTMHeight: '12',
